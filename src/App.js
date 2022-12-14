@@ -1,13 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+
+const HolaApp= ()=> {return (
+        <h1>Primer Proyecto en REACT</h1>
+    )
+}
+
+const SubTitle = ()=>{
+  return (<h2>Apartir de aqui empezamos</h2>)
+}
+
 
 function App() {
-  return (
-    <div className="App">
-     <h1>Primer Proyecto en REACT</h1>
-     <h3>Apartir de aqui empezamos</h3>
-    </div>
-  );
+  return(
+ <div className="App">
+<NavBar/>
+<HolaApp/>
+<SubTitle/>
+ </div> 
+
+  )
 }
 
 export default App;
