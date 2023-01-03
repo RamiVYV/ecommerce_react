@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
-
+import Buttom from "./components/Buttom"
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 const HolaApp= ()=> {return (
         <h1>Primer Proyecto en REACT</h1>
     )
@@ -13,10 +14,12 @@ const SubTitle = ()=>{
 
 function App() {
   return(
- <div className="App">
+ <div className="App" >
 <NavBar/>
 <HolaApp/>
 <SubTitle/>
+<Buttom/>
+<ItemListContainer gretting="Bienvenido a la tienda" user="Jhoan" />
  </div> 
 
   )
